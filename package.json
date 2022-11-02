@@ -1,0 +1,11 @@
+{
+  "name": "invent",
+  "version": "1.0.0",
+  "description": "生命在于运动，运动在于创造",
+  "author": "qipao8",
+  "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "husky": "^8.0.1"
+  }
+}
