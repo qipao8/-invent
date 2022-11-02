@@ -1,0 +1,20 @@
+{
+  "name": "vite-cli",
+  "version": "1.0.0",
+  "description": "从零搭建vite项目脚手架",
+  "bin": "./bin/vite-cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "qipao8",
+  "devDependencies": {
+    "chalk": "4",
+    "child_process": "^1.0.2",
+    "clear": "^0.1.0",
+    "commander": "^9.4.1",
+    "download-git-repo": "^3.0.2",
+    "figlet": "^1.5.2",
+    "open": "^8.4.0",
+    "ora": "5"
+  }
+}
