@@ -58,7 +58,7 @@ async function install(name) {
 
 module.exports = async (name) => {
   clear();
-  const data = await figlet("Welcome");
+  const data = await figlet("Download");
   log(data);
   log("🚀准备创建项目" + name);
   await clone("direct:https://gitee.com/qipao8/vite.git#cli", name);

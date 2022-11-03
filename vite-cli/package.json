@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "qipao8",
+  "license": "ISC",
   "devDependencies": {
     "chalk": "4",
     "child_process": "^1.0.2",
@@ -15,6 +16,7 @@
     "download-git-repo": "^3.0.2",
     "figlet": "^1.5.2",
     "open": "^8.4.0",
-    "ora": "5"
+    "ora": "5",
+    "progress": "^2.0.3"
   }
 }
