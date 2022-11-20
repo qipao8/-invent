@@ -23,9 +23,10 @@ module.exports = async (msg) => {
         const proc = spawn("git", ["push"], { cwd: `./`, shell: true });
         const spinner = ora(`${chalk.whiteBright("代码推送中...\n")}`).start();
         proc.stderr.on("data", (data) => {
-          console.log("错误：",data.toString())
-          if (data.toString().includes("fatal"))
-            console.log(chalk.redBright("未知原因导致提交失败"));
+          console.log(chalk.redBright(data.toString()));
+        });
+        proc.stdout.on("data", (data2) => {
+          console.log("stdout：", data2.toString());
         });
         proc.on("close", () => {
           spinner.text = `${chalk.greenBright("\n推送完毕!!!")}`;
